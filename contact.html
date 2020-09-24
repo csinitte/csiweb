@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
+	<title>Computer Society of India</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<style>
+		#btnScrollToTop {
+			position: fixed;
+			right:10px;
+			bottom: 10px;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background: #444242;
+			color: #ffffff;
+			outline: none;
+			cursor: pointer;
+			
+		}
+	</style>
+</head>
+<body>
+	<!-- --------------------------------------Header---------------------------------------- -->
+	<div class="container-fluid">
+		<header>
+			<div class="text-center">
+				<img src="images/csi_header.png">
+			</div>
+		</header>
+	</div>
+	<!-- --------------------------------------Navbar---------------------------------------- -->
+	<div class="container-fluid sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a href="index.html" class="navbar-brand">
+				<img src="images/csilogo.png" width="50" height="50">
+				Computer Society Of India
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item ">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="team.html" class="nav-link">Our Team</a>
+					</li>
+					<li class="nav-item">
+						<a href="gallery.html" class="nav-link">Gallery</a><span class="sr-only">(current)</span>
+					</li>
+					<li class="nav-item">
+						<a href="magazine.html" class="nav-link">Magazine</a>
+					</li>
+					<li class="nav-item active">
+						<a href="contact" class="nav-link">Contact Us</a>
+					</li>
+				</ul>
+				
+			</div>
+		</nav>
+	</div>
+	<!-- --------------------------------------------------------------------------------------------- -->
+	<div class="smedia" style="text-align: center;">
+		<a  target="_blank" title="follow us on instagram" href="https://www.instagram.com/csi_nmamit/?hl=en" ><img alt="follow us on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0> Follow Us On Instagram</a>
+			
+	</div>
+	<div class="container-fluid">
+	<div class="container-fluid">
+		<div class="container-fluid gform col-6 float-left" >
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTWffd-bimgCAxQFJRKnhj32n58Mva6MifLLbUw_yENAlJWA/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		</div>
+		<div class="container-fluid gmap col-6 float-left">
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Nmamit%20insti&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+		</div>
+	</div>
+	</div>
+	</body>
+	<button id="btnScrollToTop"	>
+		<i class="material-icons">arrow_upward</i>
+	</button>
+	<script>
+		const btnScrollToTop =document.querySelector("#btnScrollToTop");
+		btnScrollToTop.addEventListener("click",function(){
+			window.scrollTo({
+				top:0,
+				left:0,
+				behavior:"smooth"
+	
+			});
+		});
+	</script>
+</html>

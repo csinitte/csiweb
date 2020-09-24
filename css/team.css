@@ -1,0 +1,177 @@
+/*Font Import*/
+@font-face {
+	font-family: oswald;
+	src:url('../fonts/Oswald.ttf'); 
+}
+@font-face {
+	font-family: anton;
+	src:url('../fonts/anton.ttf'); 
+}
+/**/
+body{
+	background-image: url("../images/background.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+/*Header*/
+header{
+	background: linear-gradient(180deg,#f1f1f1,#9e9e9e);
+}
+img[src="images/csi_header.png"]{
+	width: 50%;
+}
+/*Navbar*/
+div.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+	height: auto;
+}
+ul{
+	margin-left: 6%;
+}
+li{
+	padding-right: 3em;
+	color: black;
+}
+a.nav-link{
+	color: black;
+}
+a.nav-link:hover{
+	color: #3f51b5;
+	font-weight: 600;
+}
+nav{
+	background-color: #f2f6f3;
+	text-align: center;
+}
+/*Gallery*/
+#border-nill{
+	border: 0 0 0 0 !important;
+	border-width: 0px;
+}
+.container{
+	padding-top: 2em;
+	padding-bottom: 3em;
+}
+.col-4{
+	margin-bottom: 3em;
+	float: left;
+}
+div.text-center h1{
+	font-family: oswald;
+	margin-top: 1em;
+}
+div.img{
+	height: 100%;
+	width:80%;
+}
+div.text-center h4{
+	margin-top: 1em;
+}
+.container.text-center{
+	padding-bottom: 0px;
+}
+/*Staff*/
+.text-center h2{
+	margin-top: 3%;
+	margin-bottom: 2%;
+}
+
+
+/*Student*/
+div.ih-item.square.effect3 {
+	padding-right: 0px;
+}
+
+div.container .lpad{
+	padding-left: 6%;
+}
+div.ih-item.circle.effect3 .info h3{
+	font-size: 10px;
+}
+/*Breakpoints*/
+@media (min-width: 768px) and (max-width: 1200px){
+	div.col-4{
+	flex: 0 0 50%;
+  	max-width: 50%;
+	}
+	img[src="images/csi_header.png"]{
+	width: 80%;
+	}
+	div.col-4.resgrid{
+		width: 50%;
+	}
+}
+@media (min-width: 1200px){
+	div.col-4{
+	flex: 0 0 33.333333%;
+  	max-width: 33.333333%;
+	}
+}
+
+@media (min-width: 425px) and (max-width: 768px){
+	div.col-4{
+	flex: 0 0 100%;
+  	max-width: 100%;
+  	float: left;
+  	margin-left: auto;
+  	margin-right: auto;
+	}
+	img[src="images/csi_header.png"]{
+	width: 80%;
+	}
+	div.col-4.resgrid{
+		width: 100%;
+		margin-left: 0px;
+		padding-left: 23%;
+		padding-right: 0px;	
+		float: left;
+	}
+	div.col-4.resgrid img{
+		object-fit: contain;
+	}
+	div.container.rescont{
+		margin-left: 0px;
+		padding: 0px 0px 0px 0px;
+
+	}
+	div.col-4.resgrid2{
+		width: 100%;	
+	}
+}
+
+@media (min-width: 375px) and (max-width: 425px){
+	div.col-4{
+	flex: 0 0 100%;
+  	max-width: 100%;
+  	float: left;
+  	margin-left: auto;
+  	margin-right: auto;
+	}
+	img[src="images/csi_header.png"]{
+	width: 80%;
+	}
+	div.col-4.resgrid{
+		width: 100%;
+		margin-left: 0px;
+		padding-left: 23%;
+		padding-right: 0px;	
+		float: left;
+	}
+	div.col-4.resgrid img{
+		object-fit: contain;
+	}
+	div.container.rescont{
+		margin-left: 0px;
+		padding: 0px 0px 0px 0px;
+
+	}
+	div.col-4.resgrid2{
+		width: 100%;	
+	}
+	.navbar-brand{
+		width: 50% !important;
+	}
+}

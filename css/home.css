@@ -1,0 +1,276 @@
+/*Font Import*/
+@font-face {
+	font-family: oswald;
+	src:url('../fonts/Oswald.ttf'); 
+}
+@font-face {
+	font-family: anton;
+	src:url('../fonts/anton.ttf'); 
+}
+/**/
+a{
+	scroll-behavior: smooth;
+}
+body{
+	background-image: url("../images/background.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+/*Header*/
+header{
+	background: linear-gradient(180deg,#f1f1f1,#9e9e9e);
+}
+img[src="images/csi_header.png"]{
+	width: 50%;
+}
+/*Nitte Image*/
+img[src="images/nmamitbanner.jpg"]{
+	width: 100%;
+	height: 35em;
+	margin: 0 0 0 0;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+/*Navbar*/
+div.container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+ul{
+	margin-left: 6%;
+}
+li{
+	padding-right: 3em;
+	color: black;
+}
+a.nav-link{
+	color: black;
+}
+a.nav-link:hover{
+	color: #3f51b5;
+	font-weight: 600;
+}
+nav{
+	background-color: #f2f6f3;
+	text-align: center;
+}
+/*About us Box*/
+div.container.about{
+	box-sizing: border-box;
+	border-style: solid;
+	border-color: gray;
+	box-shadow: 10px 10px 10px 5px gray;
+	background-color: white;
+	margin-top: 3%;
+	border-radius: 10px;
+}
+div.container p{
+	font-family: oswald;
+	text-align: center;
+}
+div.container h1{
+	padding-top: 5%;
+	font-family: anton;
+}
+/*Note And Event Container*/
+/*Message*/
+div.col-8{
+	float: left;
+}
+div.container-fluid.message{
+	background-color: white;
+	margin-top: 5%;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	overflow: hidden;
+}
+h3,h4{
+	font-family: anton;
+}
+div.msg{
+	max-width: 90%;
+	padding-left: 4em;
+	padding-top: 20px;
+}
+div.msg p{
+	font-family: cursive;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+
+}
+/*Upcomig Events*/
+.col-3{
+	float: right;
+}
+div.col-3 ul{
+	padding-top: 10%;
+}
+div.col-3 h4{
+	text-align: center;
+	text-decoration: underline;
+}
+div.col-3{
+	padding: 20px 5px 5px 5px;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 2px 2px gray;
+	height: 30em;
+}
+div.slideshow{
+	margin-top: 3%;
+}
+div.container h1{
+	text-align: center;
+	background-color: #f1f1f1;
+	padding: 20px 20px 20px 20px;
+	margin-top: 5%;
+	border-style: solid;
+	border : 2px 2px 2px 2px black;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 1px 1px gray;
+	border-radius: 25px;
+}
+/*Carousal*/
+div.container.slideshow{
+	width: 50em;
+	height: 35em;
+}
+div.carousel-item img{
+	height: 30em;
+	object-fit: fill;
+}
+@media (min-width: 425px) and (max-width: 768px){
+	div.col-4{
+	flex: 0 0 50%;
+  	max-width: 50%;
+	}
+	img[src="images/csi_header.png"]{
+	width: 80%;
+	}
+	img[src="images/nmamitbanner.jpg"]{
+	display: none;
+	}
+	/*Slideshow mobile*/
+	div.carousel-item img{
+	height: 30em;
+	object-fit: fill;
+	}
+	div.container.slideshow{
+	width: 30em;
+	height: 19em;
+	}
+	/*Upcoming Events mobile*/
+	div.col-8{
+		flex: 0 0 100%;
+  		max-width: 100%;
+	}
+	div.col-3{
+		margin-left: 1em;
+		margin-top: 1.5em; 
+		float: left;
+		flex: 0 0 100%;
+  		max-width: 100%;
+  		text-align: center;
+  		height:20em;
+	}
+	/*About*/
+	div.container.about{
+		margin-top: 3em;
+	}
+	/*Message Mobile*/
+	div.msg{
+		padding-left: 2em;
+		max-width: 100%;
+	}
+	div.container-fluid.message{
+		margin-top: 5em;
+		padding-left: 0px;
+	}
+	div.col-8 p{
+		width: 100%;
+	}
+}
+@media (min-width: 768px) and (max-width: 1200px){
+	div.col-4{
+	flex: 0 0 50%;
+  	max-width: 50%;
+	}
+	img[src="images/csi_header.png"]{
+	width: 80%;
+	}
+	div.container.slideshow{
+	width: 50em;
+	height: 32em;
+}
+}
+@media (min-width: 1200px){
+	div.col-4{
+	flex: 0 0 33.333333%;
+  	max-width: 33.333333%;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 425px){
+	.navbar-brand{
+		width: 50% !important;
+	}
+	div.container.slideshow{
+		margin-top: 2em;
+		width: 23em;
+		height: 19em;
+	}
+	div.container.slideshow img{
+		height: 17em;
+	}
+	/*NMAMIT Image*/
+	img[src="images/nmamitbanner.jpg"]{
+		display: none;
+	}
+		/*About*/
+	div.container.about{
+		margin-top: 3em;
+	}
+		/*Message Mobile*/
+	div.msg{
+		padding-left: 2em;
+		max-width: 100% !important;
+	}
+	div.container-fluid.message{
+		margin-top: 5em;
+		padding-left: 0px;
+	}
+	div.col-8 p{
+		width: 100%;
+	}
+		/*Upcoming Events mobile*/
+	div.col-8{
+		flex: 0 0 100%;
+  		max-width: 100%;
+	}
+	div.col-3{
+		margin-left: 1em;
+		margin-top: 1.5em; 
+		float: left;
+		flex: 0 0 100%;
+  		max-width: 100%;
+  		text-align: center;
+  		height:20em;
+	}
+	column {
+		float: left;
+		width: 33.33%;
+		padding: 20px;
+		margin: 20em;
+	  }
+	  
+	  /* Clearfix (clear floats) */
+	  row::after {
+		content: "";
+		clear: both;
+		display: table;
+	  }
+}
