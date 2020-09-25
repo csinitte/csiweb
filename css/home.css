@@ -11,6 +11,11 @@
 a{
 	scroll-behavior: smooth;
 }
+
+div.box{
+	border: 5px solid gray;
+	background-color: beige;
+}
 body{
 	background-image: url("../images/background.jpg"); 
 	background-repeat: no-repeat;
