@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178738134-1"></script>
 <script>
@@ -11,29 +10,16 @@
 
   gtag('config', 'UA-178738134-1');
 </script>
-
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<title>Computer Society of India</title>
+	<title>Computer Society Of India</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/mag.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/gallery.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/ihover.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<style type="text/css">
-
-.frame-area {
-  display: block;
-  width: 100%;  /* RESPONSIVE WIDTH */
-  max-width: 400px;
-  height: 550px;
-  overflow: auto;  /* EDIT TO hidden FOR NO SCROLLBAR */
-  border: #999999 1px solid;
-  margin: 0px;
-  padding: 0px;
-  margin: 0 auto;
-  }
-  
+	<style>
 		#btnScrollToTop {
 			position: fixed;
 			right:10px;
@@ -47,10 +33,7 @@
 			cursor: pointer;
 			
 		}
-	
-
-</style>
-
+	</style>
 </head>
 <body>
 	<!-- --------------------------------------Header---------------------------------------- -->
@@ -62,7 +45,7 @@
 		</header>
 	</div>
 	<!-- --------------------------------------Navbar---------------------------------------- -->
-	<div class="container-fluid">
+	<div class="container-fluid sticky-top">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<a href="index.html" class="navbar-brand">
 				<img src="images/csilogo.png" width="50" height="50">
@@ -80,10 +63,10 @@
 						<a href="team.html" class="nav-link">Our Team</a>
 					</li>
 					<li class="nav-item">
-						<a href="gallery.html" class="nav-link">Gallery</a><span class="sr-only">(current)</span>
+						<a href="gallery.html" class="nav-link">Gallery</a>
 					</li>
-					<li class="nav-item active">
-						<a href="magazine.html" class="nav-link">Magazine</a>
+					<li class="nav-item">
+						<a href="magazine test1.html" class="nav-link">Magazine</a>
 					</li>
 					<li class="nav-item">
 						<a href="contact.html" class="nav-link">Contact Us</a>
@@ -92,18 +75,64 @@
 			</div>
 		</nav>
 	</div>
-	<!--  -->
-	<div >
-		<h1>BYTES</h1>
-	</div>
-
+	<!-- ------------------------------------Gallery--------------------------------------------- -->
+	<div class="container">
 	
-	<div class="container" >
-		<iframe name="Framename" src="docs/mag.pdf" width="400" height="200" frameborder="0"  scrolling="auto" class="frame-area">
-		</iframe>
+		<div class="container-fluid message" >
 
+			<h4 style="text-align: center;"> Bytes</h4>
+		</div>
+		<br><br>
+		<div class="col-4 c " id="border-nill">
+			<div class="ih-item square effect6 from_top_and_bottom" id="border-nill">
+				<a href="gallery_csii.html">
+					<div class="img"><img src="images/bytes1.PNG" alt="img"></div>
+				        <div class="info">
+				          <h3>Bytes</h3>
+				          <p>August - September</p>
+				        </div>
+				   </a>
+			</div>
+		</div>
+		<div class="col-4 c ">
+			<div class="ih-item square effect6 from_top_and_bottom" id="border-nill">
+				<a href="gallery_ergo.html">
+					<div class="img" ><img src="images/bytes2.PNG" alt="img"></div>
+				        <div class="info">
+				          <h3>Bytes</h3>
+				          <p>October - January</p>
+				        </div>
+				   </a>
+			</div>
+		</div>
+		<div class="col-4 c ">
+			<div class="ih-item square effect6 from_top_and_bottom" id="border-nill">
+				<a href="gallery_locklogo.html">
+					<div class="img"><img src="images/bytes3.PNG" alt="img"></div>
+				        <div class="info">
+				          <h3>Bytes </h3>
+				          <p>January - April</p>
+				        </div>
+				   </a>
+			</div>
+		</div>
 		
+		
+		
+		
+		
+
+			
+			
+			
+
+			
+			
+
+
 	</div>
+		
+
 	<button id="btnScrollToTop"	>
 		<i class="material-icons">arrow_upward</i>
 	</button>
