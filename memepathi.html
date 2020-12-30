@@ -1,45 +1,23 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178738134-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178738134-1');
+</script>
+
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<title>Computer Society of India</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/mag.css">
+	<title>Computer Society Of India</title>
+	<link rel="stylesheet" type="text/css" href="css/csii_gallery.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/ihover.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<style type="text/css">
-
-.frame-area {
-  display: block;
-  width: 100%;  /* RESPONSIVE WIDTH */
-  max-width: 400px;
-  height: 550px;
-  overflow: auto;  /* EDIT TO hidden FOR NO SCROLLBAR */
-  border: #999999 1px solid;
-  margin: 0px;
-  padding: 0px;
-  margin: 0 auto;
-  }
-  
-		#btnScrollToTop {
-			position: fixed;
-			right:10px;
-			bottom: 10px;
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			background: #444242;
-			color: #ffffff;
-			outline: none;
-			cursor: pointer;
-			
-		}
-	
-
-</style>
-
 </head>
 <body>
 	<!-- --------------------------------------Header---------------------------------------- -->
@@ -51,7 +29,7 @@
 		</header>
 	</div>
 	<!-- --------------------------------------Navbar---------------------------------------- -->
-	<div class="container-fluid">
+	<div class="container-fluid sticky-top">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<a href="index.html" class="navbar-brand">
 				<img src="images/csilogo.png" width="50" height="50">
@@ -68,10 +46,10 @@
 					<li class="nav-item">
 						<a href="team.html" class="nav-link">Our Team</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a href="gallery.html" class="nav-link">Gallery</a><span class="sr-only">(current)</span>
 					</li>
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a href="magazine.html" class="nav-link">Magazine</a>
 					</li>
 					<li class="nav-item">
@@ -81,23 +59,36 @@
 			</div>
 		</nav>
 	</div>
-	<div class="meme" style="text-align: center;">
-	<img src="images/memepathi.jpg" alt="memepathi" width="1080" height="900" >
-</div>
-   
-    <button id="btnScrollToTop"	>
-        <i class="material-icons">arrow_upward</i>
-    </button>
-    <script>
-        const btnScrollToTop =document.querySelector("#btnScrollToTop");
-        btnScrollToTop.addEventListener("click",function(){
-            window.scrollTo({
-                top:0,
-                left:0,
-                behavior:"smooth"
-    
-            });
-        });
-    </script>
+	<!-- --------------------------------------------------gallery--------------------------- -->
+	
+	<div class="container">
+		<h1> WINNERS OF MEMEPATHI</h1>
+		<div class="col-4" data-toggle="modal" data-target = "#image2">
+			<img src="images/memepathi_WINNERS.jpg">
+		</div>
+	</div>
+
+	<!------------------------------------------------ Modal -------------------------------------->
+	<!-- <div class="modal fade" id="image1" tabindex="-1" role="dialog">
+		<a class="close" data-dismiss="modal"></a>
+  		<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	     		<div class="modal-body">
+	        	<img src="images/web/wd (1).jpg">
+	      		</div>
+    		</div>
+  		</div>
+    </div> -->
+    <div class="modal fade" id="image2" tabindex="1" role="dialog">
+		<a class="close" data-dismiss="modal"></a>
+  		<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	     		<div class="modal-body">
+	        	<img src="images/pandamic_winner.jpg">
+	      		</div>
+    		</div>
+  		</div>
+	</div>
+	<!-- -------------------------------------------------------------------------------------- -->
 </body>
 </html>
